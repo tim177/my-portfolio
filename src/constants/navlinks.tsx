@@ -10,7 +10,7 @@ export const navlinks = [
   {
     href: "/",
     label: "home",
-    icons: IconBolt,
+    icon: IconBolt,
   },
   {
     href: "/about",

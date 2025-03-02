@@ -9,17 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mapbox/rehype-prism": "^0.9.0",
+    "@next/mdx": "^15.2.0",
     "@tabler/icons-react": "^3.30.0",
+    "@tailwindcss/typography": "^0.5.16",
     "framer-motion": "^12.4.7",
     "next": "14.2.23",
     "react": "^18",
     "react-dom": "^18",
+    "remark-gfm": "^4.0.1",
     "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "^20.17.22",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
     "eslint": "^8",
     "eslint-config-next": "14.2.23",
     "postcss": "^8",

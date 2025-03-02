@@ -1,3 +1,4 @@
+"use client";
 import { isMobile } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { Badge } from "./Badge";
@@ -54,9 +55,8 @@ export const Navigation = ({
   const pathname = usePathname();
 
   const isActive = (href: string) => pathname === href;
-
   return (
-    <div className="flex flex-col space-y-1 my-10 relative-z-[100]">
+    <div className="flex flex-col space-y-1 my-10 relative z-[100]">
       {navlinks.map((link: Navlink) => (
         <Link
           key={link.href}
@@ -64,12 +64,12 @@ export const Navigation = ({
           onClick={() => isMobile() && setOpen(false)}
           className={twMerge(
             "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm",
-            isActive(link.href) && "bg-white shadow-md text-primary"
+            isActive(link.href) && "bg-white shadow-lg text-primary"
           )}
         >
           <link.icon
             className={twMerge(
-              "h-4 w-4 flex shrink-0",
+              "h-4 w-4 flex-shrink-0",
               isActive(link.href) && "text-sky-500"
             )}
           />
@@ -90,10 +90,10 @@ export const Navigation = ({
         >
           <link.icon
             className={twMerge(
-              "h-4 w-4 flex flex-shrink-0",
+              "h-4 w-4 flex-shrink-0",
               isActive(link.href) && "text-sky-500"
             )}
-          />{" "}
+          />
           <span>{link.label}</span>
         </Link>
       ))}
