@@ -3,7 +3,7 @@ export type Blog = {
   description: string;
   date: string;
   slug: string;
-  image: string;
+  image?: string;
   //rest
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;

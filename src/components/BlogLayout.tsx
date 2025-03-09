@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import Image from "next/image";
 import { Container } from "./Container";
@@ -20,12 +21,7 @@ function ArrowLeftIcon(props: any) {
   );
 }
 
-export function BlogLayout({
-  children,
-  meta,
-  isRssFeed = false,
-  previousPathname,
-}: any) {
+export function BlogLayout({ children, meta }: any) {
   return (
     <Container>
       <article>

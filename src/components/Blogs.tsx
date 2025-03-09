@@ -56,7 +56,7 @@ export const Blogs = ({ blogs }: { blogs: Blog[] }) => {
             </AnimatePresence>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 relative z-20">
               <Image
-                src={blog.image}
+                src={blog.image ?? "/default-thumbnail.jpg"}
                 alt="thumbnail"
                 height="200"
                 width="200"
@@ -71,7 +71,7 @@ export const Blogs = ({ blogs }: { blogs: Blog[] }) => {
                   {blog.description}
                 </Paragraph>
                 <div className="flex space-x-2 flex-wrap mt-4">
-                  {blog.tags?.map((tag, index) => (
+                  {blog.tags?.map((tag: string) => (
                     <span
                       key={`tag-${blog.slug}`}
                       className="text-xs px-1 py-0.5 text-secondary border border-neutral-200 bg-white rounded-md"
