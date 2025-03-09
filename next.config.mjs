@@ -11,6 +11,7 @@ const nextConfig = {
       "avatars.githubusercontent.com",
     ],
   },
+  pageExtensions: ["js", "jsx", "mdx", "ts", "tsx", "md"],
   experimental: {
     mdxRs: true,
   },

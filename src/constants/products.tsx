@@ -10,7 +10,7 @@ const sidefolioTailwindMasterKit2 = "/images/sidefolio-tailwindmasterkit-2.png";
 export const products = [
   {
     href: "https://natours-xbsh.onrender.com/",
-    title: "travel Platform",
+    title: "Travel Platform",
     description: "A travel booking platform ",
     thumbnail: sidefolioAceternity,
     images: [sidefolioAceternity, sidefolioAceternity2],

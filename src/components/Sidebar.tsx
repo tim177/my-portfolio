@@ -1,7 +1,6 @@
 "use client";
 import { isMobile } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { Badge } from "./Badge";
 import React, { useState } from "react";
 import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
 import { usePathname } from "next/navigation";
@@ -31,9 +30,9 @@ export const Sidebar = () => {
               <SidebarHeader />
               <Navigation setOpen={setOpen} />
             </div>
-            <div onClick={() => isMobile() && setOpen(false)}>
+            {/* <div onClick={() => isMobile() && setOpen(false)}>
               <Badge href="/resume" text="Read Resume" />
-            </div>
+            </div> */}
           </motion.div>
         )}
       </AnimatePresence>
